@@ -36,10 +36,7 @@ Company goal is to deliver the product frequently to the production with high-en
 
 ### Prerequisites:
 
-- Create [docker account](https://hub.docker.com/)
-- Install [docker](https://docs.docker.com/desktop/windows/install/)
-- Create [GitHub account](https://github.com/login)
-
-### Create Docker Hub account
+- Create [docker](https://hub.docker.com/) and [GitHub](https://github.com/login) accounts
+- Install docker (desktop) and git (client)
 
 
