@@ -36,7 +36,5 @@ Company goal is to deliver the product frequently to the production with high-en
 
 ### Prerequisites:
 
-- Create [docker](https://hub.docker.com/) and [GitHub](https://github.com/login) accounts
 - Install docker (desktop) and git (client)
-
 
