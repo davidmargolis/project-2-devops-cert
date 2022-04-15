@@ -47,7 +47,7 @@ Setup the following software on your machine:
     ```
     sudo apt-get install git
     ```
-- jenkins
+- jenkins with git plugin
     ```
     wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add
     sudo bash -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -76,4 +76,17 @@ Setup the following software on your machine:
     sudo service jenkins start
     ```
 1. Open jenkins http://localhost:8080/ and login
+1. Click New Item
+    1. Enter `course-1-project-2-pipeline` for item name
+    1. Select `Multibranch Pipeline` for item type
+    1. Click `OK`
+1. Click `Add Source` and choose `Git`
+    1. Use `Jenkins Credentials Provider: Jenkins` to create credentials
+    1. Select this new credential option
+1. Choose `Build / Publish Docker image` option
+    1. Use `.` for `Directory for Dockerfile`
+    1. Use `course-1-project-2` for the `Image`
+    1. Add new credentials and select them for the `Registry Credentials`
+    1. Check the image
+1. Click `Build Now`
 
