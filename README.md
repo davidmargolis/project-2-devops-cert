@@ -88,5 +88,7 @@ Setup the following software on your machine:
     1. Use `course-1-project-2` for the `Image`
     1. Add new credentials and select them for the `Registry Credentials`
     1. Check the image
-1. Click `Build Now`
+1. Save
+1. Use the `Scan Multibranch Pipeline Now` to find our branch with the `Jenkinsfile`.
+1. Click `Status` option 
 
