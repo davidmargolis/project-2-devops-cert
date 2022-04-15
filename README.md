@@ -53,6 +53,7 @@ Setup the following software on your machine:
     sudo bash -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
     sudo apt update
     sudo apt-get install jenkins
+    sudo chmod 666 /var/run/docker.sock
     ```
 
 ## Setting up Repo:
@@ -76,6 +77,10 @@ Setup the following software on your machine:
     sudo service jenkins start
     ```
 1. Open jenkins http://localhost:8080/ and login
+1. Install jenkins plugins:
+    1. [Docker](https://plugins.jenkins.io/docker-plugin/)
+    1. [Docker Pipeline](https://plugins.jenkins.io/docker-workflow/)
+    1. [Git](https://plugins.jenkins.io/git/)
 1. Click New Item
     1. Enter `course-1-project-2-pipeline` for item name
     1. Select `Multibranch Pipeline` for item type
