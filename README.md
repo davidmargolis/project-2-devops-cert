@@ -43,6 +43,7 @@ Company goal is to deliver the product frequently to the production with high-en
 Setup the following software on your machine:
 - [Docker Desktop](https://docs.docker.com/desktop/windows/install/), and configure:
   - Check box for setting - Docker Desktop -> Settings -> General -> Use Docker Compose V2 
+  - Generate an access token for Docker following [these directions](https://hub.docker.com/settings/security?generateToken=true)
 - git
     ```
     sudo apt-get install git
@@ -96,4 +97,4 @@ Setup the following software on your machine:
 1. Save
 1. Use the `Scan Multibranch Pipeline Now` to find our branch with the `Jenkinsfile`.
 1. Click `Status` option 
-
+1. Now the Jenkins pipeline should build automatically with new git commits
