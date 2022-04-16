@@ -14,7 +14,6 @@ pipeline {
             }
         }
         stage('Build Image') {
-            def customImage
             steps {
                 sh 'docker build -t dmm2168/course-2-project-1:latest .'
             }
