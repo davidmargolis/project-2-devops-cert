@@ -18,11 +18,6 @@ pipeline {
                 sh 'docker build -t dmm2168/course-2-project-1:latest .'
             }
         }
-        stage('Run Image') {
-            steps {
-                sh 'docker run --rm dmm2168/course-2-project-1:latest'
-            }
-        }
         stage('Publish Image') {
             environment {
                 DOCKER_CREDS = credentials('docker')
