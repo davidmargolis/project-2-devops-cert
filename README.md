@@ -88,11 +88,18 @@ Setup the following software on your machine:
     1. Click `OK`
 1. Click `Add Source` and choose `Git`
     1. Use `Jenkins Credentials Provider: Jenkins` to create credentials
+        1. Set `ID` and `Description` to `github`
+        1. Fill in the the `username` and `password` fields
+        1. Choose `OK`
     1. Select this new credential option
 1. Choose `Build / Publish Docker image` option
     1. Use `.` for `Directory for Dockerfile`
     1. Use `course-1-project-2` for the `Image`
-    1. Add new credentials and select them for the `Registry Credentials`
+    1. Use `Jenkins Credentials Provider: Jenkins` to create credentials
+        1. Set `ID` and `Description` to `docker`
+        1. Fill in the the `username` and `password` fields
+        1. Choose `OK`
+    1. Select this new credential option
     1. Check the image
 1. Save
 1. Use the `Scan Multibranch Pipeline Now` to find our branch with the `Jenkinsfile`.
